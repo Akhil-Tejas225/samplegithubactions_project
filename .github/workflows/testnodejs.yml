@@ -1,13 +1,13 @@
 name: nodejs_workflow
-run_name: first_project
+run-name: first_project
 on: [push, workflow_dispatch]
 jobs:
-  - job-1:
-     runs-on: ubuntu-latest
-    steps:
-      - name: clone_git_repo
-        uses: actions/checkout@v4
-      - name: install nodejs
-        uses: actions/setup-node@v4
-        with: 
-          node-version: 'v22.17.0' 
+   job-1:
+      runs-on: ubuntu-latest
+      steps:
+        - name: clone_git_repo
+          uses: actions/checkout@v4
+        - name: install nodejs
+          uses: actions/setup-node@v4
+          with: 
+            node-version: 'v22.17.0' 
