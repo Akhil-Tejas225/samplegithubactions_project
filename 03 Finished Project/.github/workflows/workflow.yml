@@ -12,6 +12,6 @@ jobs:
           with: 
             node-version: 'v22.17.0' 
         - name: install dependencies
-          run: npm 
+          run: npm ci
         - name: run test
           run: npm test 
