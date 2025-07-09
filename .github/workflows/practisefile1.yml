@@ -9,7 +9,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: check linting
-              run: npm run lint
+              run: eslint .
             - name: install prop
               run: npm install prop-types
             - name: install dependencies
