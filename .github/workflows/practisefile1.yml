@@ -1,0 +1,17 @@
+name: PS-1
+on:
+  push:
+    branches:
+        - feature1
+jobs:
+    job-1: 
+        name: Test
+        runs-on: ubuntu-latest
+        steps:
+            - name: check linting
+              uses: npm run lint
+            - name: run test
+              run: npm test
+            - name: build
+              run: npm run build
+

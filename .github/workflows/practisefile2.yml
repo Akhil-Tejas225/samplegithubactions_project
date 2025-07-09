@@ -1,0 +1,12 @@
+name: PS-2
+on: 
+  issues:
+    types:
+         - opened
+jobs:
+    job-1:
+        name: Test
+        runs-on: ubuntu-latest
+        steps:
+            - name: output issues
+              run: echo "${{ github.event }}"
