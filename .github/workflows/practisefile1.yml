@@ -10,6 +10,8 @@ jobs:
         steps:
             - name: check linting
               uses: npm run lint
+            - name: install dependencies
+              run: npm clean install
             - name: run test
               run: npm test
             - name: build
