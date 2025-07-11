@@ -10,12 +10,10 @@ jobs:
         steps:
             - name: git clone
               uses: actions/checkout@v4
-            - name: install prop
-              run: npm install prop-types
             - name: install dependencies
-              run: npm clean install
+              run: npm ci
             - name: check linting
-              run: eslint .
+              run: npm run lint
             - name: run test
               run: npm test
             - name: build
