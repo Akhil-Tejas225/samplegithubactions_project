@@ -14,8 +14,8 @@ jobs:
               run: npm ci
             - name: check linting
               run: npm run lint
-            - name: run test
-              run: npm test
             - name: build
               run: npm run build
+            - name: test
+              run: npm test 
 
